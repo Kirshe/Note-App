@@ -1,3 +1,4 @@
+import { NoteDetailsComponent } from './pages/note-details/note-details.component';
 import { MainLayoutComponent } from './pages/main-layout/main-layout.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -11,6 +12,14 @@ const routes: Routes = [
       {
         path: '',
         component: NoteListComponent,
+      },
+      {
+        path: 'new',
+        component: NoteDetailsComponent,
+      },
+      {
+        path: ':id',
+        component: NoteDetailsComponent,
       },
     ],
   },
