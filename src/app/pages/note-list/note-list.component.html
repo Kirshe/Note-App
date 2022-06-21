@@ -9,6 +9,9 @@
       </p>
     </div>
   </div>
+  <button class="button floating-add-button is-primary" routerLink="new">
+    +
+  </button>
 
   <div class="note-list" [@listAnim]>
     <app-note-card
@@ -20,8 +23,4 @@
       [body]="note.body"
     ></app-note-card>
   </div>
-
-  <button class="button floating-add-button is-primary" routerLink="new">
-    + Add
-  </button>
 </div>
