@@ -25,6 +25,5 @@ import { NoteService } from './shared/note.service';
     BrowserAnimationsModule,
   ],
   providers: [NoteService],
-  bootstrap: [AppComponent],
 })
 export class AppModule {}
